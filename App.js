@@ -15,6 +15,7 @@ import {
   Button,
 } from 'react-native';
 import Bananas from './src/components/Bananas';
+import Touchables from './src/components/Touchables';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -31,6 +32,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Bananas />
+        <Touchables />
         <Button
           title='kujaribu'
           onPress={this._onPress}
