@@ -16,6 +16,7 @@ import {
 } from 'react-native';
 import Bananas from './src/components/Bananas';
 import Touchables from './src/components/Touchables';
+import FlatListTrial from './src/components/FlatList';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -47,6 +48,7 @@ export default class App extends Component {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <FlatListTrial />
       </View>
     );
   }
